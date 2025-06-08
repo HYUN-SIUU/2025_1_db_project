@@ -1,0 +1,57 @@
+.container {
+  padding: 20px;
+}
+
+.input-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-grid input {
+    height: 30px;
+}
+
+.button-group {
+  margin-bottom: 20px;
+}
+
+.button-group button {
+  margin-right: 10px;
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.result-table th,
+.result-table td {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.result-table thead tr {
+  background: #f0f0f0;
+}
+
+.no-result {
+  text-align: center;
+  color: #999;
+}
+
+.year-range {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.year-range label {
+  margin-right: 10px;
+  min-width: 60px;
+}
+
+.year-range select {
+  padding: 3px;
+}
