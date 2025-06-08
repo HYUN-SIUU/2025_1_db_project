@@ -59,7 +59,7 @@ class MovieSearchApp extends Component {
        
         const query = `title=${title}&country=${country}&genre=${genre}&director=${director}&yearStart=${yearStart}&yearEnd=${yearEnd}`;
 
-        fetch(`/api/movies?${query}`)
+        fetch(`https://2025dbproject.netlify.app/api/movies?${query}`)
             .then((res) => res.json())
             .then((data) => {
                 this.setState({ results: data });
