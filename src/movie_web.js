@@ -59,7 +59,7 @@ class MovieSearchApp extends Component {
        
         const query = `title=${title}&country=${country}&genre=${genre}&director=${director}&yearStart=${yearStart}&yearEnd=${yearEnd}`;
 
-        fetch(`https://172.30.1.96:5000/api/movies?${query}`)
+        fetch(`http://ec2-3-39-22-87.ap-northeast-2.compute.amazonaws.com:5000/api/movies?${query}`)
             .then((res) => res.json())
             .then((data) => {
                 this.setState({ results: data });
