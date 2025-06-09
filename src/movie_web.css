@@ -55,3 +55,23 @@
 .year-range select {
   padding: 3px;
 }
+
+.pagination {
+    margin-top: 20px;           /* 표와 여백 */
+    display: flex;
+    justify-content: center;    /* 가운데 정렬 */
+    gap: 4px;                   /* 버튼 사이 여백 */
+}
+
+.pagination button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
